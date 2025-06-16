@@ -1,115 +1,109 @@
-Sure! Here's a professionally formatted `README.md` file for your **SMS Spam Detection using NLP** project:
+Sure! Here's a complete and well-formatted `README.md` file for your **Drone Surveillance App** built with Flutter:
 
 ---
 
 ````markdown
-# 📩 SMS Spam Detection using NLP
+# 🚁 Drone Surveillance App
 
-This project leverages Natural Language Processing (NLP) and classic Machine Learning techniques to classify SMS messages as **spam** or **ham** (not spam).
-
----
-
-## 🔍 Features
-
-- ✅ Text cleaning and preprocessing:
-  - Lowercasing
-  - Punctuation removal
-  - Stopword removal
-  - Stemming (Porter Stemmer)
-- 📊 Exploratory Data Analysis (EDA)
-- 🧠 Feature Extraction:
-  - Bag of Words (BoW)
-  - TF-IDF (Term Frequency–Inverse Document Frequency)
-- 🤖 Model Training:
-  - Naive Bayes
-  - Logistic Regression
-- 📈 Model Evaluation:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-Score
-  - Confusion Matrix
+A Flutter-based mobile application that provides a live drone video feed via RTSP using VLC Player, with capabilities to capture photos, record video, and monitor drone connectivity via Wi-Fi.
 
 ---
 
-## 🛠️ Technologies Used
+## 📱 Features
 
-- Python
-- Scikit-learn
-- Pandas
-- NumPy
-- Matplotlib & Seaborn
-- NLTK (Natural Language Toolkit)
-
----
-
-## 📁 Dataset
-
-The dataset contains thousands of SMS messages labeled as **spam** or **ham**. Each message is a labeled text entry used for training and evaluating the models.
+- 📶 **Wi-Fi Check:** Ensures connection with drone's Wi-Fi before starting the stream.
+- 🎥 **Live RTSP Streaming:** Uses `flutter_vlc_player` to stream real-time video.
+- 📸 **Snapshot Capture:** Takes photos from the video stream and saves them locally.
+- 🎞️ **Video Recording:** Records the live stream and saves the video locally.
+- 🛑 **Drone Control:** Start/stop drone feed and video recording with intuitive UI buttons.
 
 ---
 
-## 🚀 How to Run
+## 🔧 Technologies Used
 
-1. **Clone the repository**  
+- **Flutter** (Dart)
+- [`flutter_vlc_player`](https://pub.dev/packages/flutter_vlc_player)
+- [`connectivity_plus`](https://pub.dev/packages/connectivity_plus)
+- [`path_provider`](https://pub.dev/packages/path_provider)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK (latest stable version)
+- Android Studio or VS Code
+- A device/emulator (with VLC-compatible RTSP stream for testing)
+
+### Installation
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/sms-spam-nlp.git
-   cd sms-spam-nlp
+   git clone https://github.com/your-username/drone-surveillance-app.git
+   cd drone-surveillance-app
 ````
 
-2. **Install dependencies**
+2. **Install dependencies:**
 
    ```bash
-   pip install -r requirements.txt
+   flutter pub get
    ```
 
-3. **Open and run the Colab Notebook**
+3. **Run the app:**
 
+   ```bash
+   flutter run
    ```
-   SMS Spam Detection Analysis - NLP.ipynb
-   ```
 
-> Alternatively, run it locally using Jupyter Notebook.
+> Make sure your testing device is connected to the drone Wi-Fi (`FLOW_WIFI-2a89c0`) and the drone is streaming RTSP on `rtsp://192.168.1.101:8554/live`.
 
 ---
 
-## 📌 Result
+## 📁 Project Structure
 
-Achieved **high accuracy** in detecting spam messages using NLP-based text preprocessing and traditional ML models like Naive Bayes and Logistic Regression.
-
----
-
-## 📸 Sample Output
-
-| Metric    | Naive Bayes | Logistic Regression |
-| --------- | ----------- | ------------------- |
-| Accuracy  | 0.98        | 0.97                |
-| Precision | 0.96        | 0.95                |
-| Recall    | 0.98        | 0.96                |
-| F1 Score  | 0.97        | 0.95                |
+```
+lib/
+├── main.dart         # App entry point and main UI logic
+```
 
 ---
 
-## 📜 License
+## 📸 Screenshots
 
-This project is licensed under the **MIT License** – feel free to use, modify, and distribute!
+| Start Screen                    | Live Feed                          | Controls                              |
+| ------------------------------- | ---------------------------------- | ------------------------------------- |
+| ![Start](screenshots/start.png) | ![Live Feed](screenshots/feed.png) | ![Controls](screenshots/controls.png) |
 
 ---
 
-## 👨‍💻 Author
+## ❗ Known Limitations
+
+* Works only when connected to a specific Wi-Fi network.
+* Snapshot files are not accessible from gallery unless moved manually.
+* Video recording paths and permission handling might require extra setup for iOS.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## ✨ Author
 
 **Muhammad Waleed**
-📫 \[[YourEmail@example.com](mailto:YourEmail@example.com)]
-🌐 \[YourPortfolio.com]
-🐙 [GitHub](https://github.com/your-username)
+🌐 \[YourPortfolio.com](https://nawazwaleed65.github.io/Portfolio/)
+🐙 [GitHub](https://github.com/nawazwaleed65)
 
 ---
 
-> ⭐ *If you found this project useful, please give it a star on GitHub!*
+> 🚧 *Contributions, feedback, and suggestions are always welcome!*
 
 ```
 
 ---
 
-Let me know if you'd like this as a downloadable `.md` file, or want help creating a `requirements.txt` for the project too.
+Let me know if you want this converted into a file, include actual screenshots, or customize for Android/iOS build setup!
 ```
